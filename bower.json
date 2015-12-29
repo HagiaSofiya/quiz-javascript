@@ -1,0 +1,11 @@
+{
+	"name": "quiz-javascript",
+	"description": "quiz-javascript",
+	"authors": [
+		"Sofiya Shrayber"
+	],
+	"license": "ISC",
+	"devDependencies": {
+		"neat": ">=1.7.2"
+	}
+}

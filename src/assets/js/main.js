@@ -11,8 +11,8 @@ var scrambler = {
 	scramble: function(str) {
         var result = '';
 		for (var i = 0; i < str.length; i ++ ) {
-			result += '<span hidden="">' + str.charAt(i) + '</span>'
-			var randomNumber = Math.floor(Math.random() * 10 + 10)
+			result += '<span hidden="">' + str.charAt(i) + '</span>';
+			var randomNumber = Math.floor(Math.random() * 10 + 10);
 			for (var n = 0; n <= randomNumber; n++) {
 				result += '<span>' + this.randomChar() + '</span>';
 			}

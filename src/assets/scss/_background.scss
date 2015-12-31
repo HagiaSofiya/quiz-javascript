@@ -20,7 +20,7 @@ BACKGROUND
 	background-image: url('../img/grid.png');
 	background-repeat: no-repeat;
  	background-position: center;
-    background-size: 100% 105%;
+    background-size: 105% 105%;
 }
 
 .scrambler-arrow-top-left {
@@ -64,4 +64,59 @@ BACKGROUND
 	right: 0;
 	width: em(91);
 
+}
+
+.window-arrows {
+	position: relative;
+}
+.window-arrow-top-left {
+	background-image: url('../img/window-arrow/top-left.png');
+	background-repeat: no-repeat;
+	height: em(41);
+	left: em(10);
+	position: absolute;
+	top: em(10);
+	width: em(41);
+	@include media($mobile) {
+		display: none;
+	}
+}
+
+.window-arrow-top-right {
+	background-image: url('../img/window-arrow/top-right.png');
+	background-repeat: no-repeat;
+	height: em(41);
+	right: em(10);
+	position: absolute;
+	top: em(10);
+	width: em(41);
+	@include media($mobile) {
+		display: none;
+	}
+}
+
+.window-arrow-bottom-left{
+	background-image: url('../img/window-arrow/bottom-left.png');
+	background-repeat: no-repeat;
+	bottom: em(10);
+	height: em(41);
+	left: em(10);
+	position: absolute;
+	width: em(41);
+	@include media($mobile) {
+		display: none;
+	}
+}
+
+.window-arrow-bottom-right {
+	background-image: url('../img/window-arrow/bottom-right.png');
+	background-repeat: no-repeat;
+	bottom: em(10);
+	height: em(41);
+	position: absolute;
+	right: em(10);
+	width: em(41);
+	@include media($mobile) {
+		display: none;
+	}
 }

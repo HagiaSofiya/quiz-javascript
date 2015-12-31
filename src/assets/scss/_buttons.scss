@@ -3,3 +3,20 @@
 BUTTONS
 
 */
+
+
+.button-container {
+	@include shift(1);
+	a {
+		@include span-columns(5.5);;
+		background-color: #f8e813;
+		border: none;
+		color: #000;
+		display: inline-block;
+		font-family: 'Oswald', sans-serif;
+		font-size: em(16);
+		letter-spacing: em(7);
+		padding: em(18) 0;
+		text-transform: uppercase;
+	}
+}

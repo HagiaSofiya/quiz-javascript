@@ -9,23 +9,30 @@ SCRAMBLER CONTAINER
 }
 
 .text-fields {
-	height: 100%;
+	@include outer-container();
 	display: block;
+	padding: em(15);
+	position: relative;
+	margin-bottom: em(20);
 }
 
 #textInput,
 #textDisplay {
-	@include span-columns(12);
-	background-color: #000;
+	background-color: rgba(0, 0, 0, .5);
 	border: none;
+	border-bottom: em(30) solid rgba(0, 0, 0, 0);
+	border-top: em(30) solid rgba(0, 0, 0, 0);
 	color: #fff;
 	font-family: 'Roboto Condensed',;
-	height: em(200);
+	height: em(250);
+	padding: 0 em(30) 0;
 	resize:none;
+	width: 100%;
 	word-wrap: break-word;
 }
 
 #textInput {
+	margin-bottom: em(15);
  	white-space: normal;
 }
 

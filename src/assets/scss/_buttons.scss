@@ -8,10 +8,10 @@ BUTTONS
 .button-container {
 	@include shift(1);
 	@include media($mobile) {
-		@include shift(2);
+		@include shift(0);
 	}
 	a {
-		@include span-columns(5.5);;
+		@include span-columns(5.5);
 		background-color: #f8e813;
 		border: none;
 		color: #000;
@@ -23,10 +23,8 @@ BUTTONS
 		text-align: center;
 		text-transform: uppercase;
 		@include media($mobile) {
-			@include span-columns(10);
-			&:first-child {
-				margin-bottom: em(18);
-			}
+			@include span-columns(6);
+			font-size: em(12);
 		}
 	}
 }

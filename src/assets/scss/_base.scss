@@ -6,8 +6,9 @@ BASE
 
 html,
 body {
-	height: 100%;
 	background-color: #000;
+	cursor:default;
+	height: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

@@ -21,27 +21,10 @@ LAYOUT
 }
 
 .inner {
-
-}
-
-.cover {
-
-}
-
-@media (min-width: 768px) {
-
-	.site-wrapper-inner {
-		vertical-align: middle;
-	}
-
-	.scrambler-container {
-		width: 100%;
-	}
-}
-
-@media (min-width: 992px) {
-
-	.scrambler-container {
-		width: 700px;
+	@include span-columns(10);
+	@include shift(1);
+	@include media($mobile) {
+		@include span-columns(12);
+		@include shift(0);
 	}
 }

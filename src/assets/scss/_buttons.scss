@@ -7,6 +7,9 @@ BUTTONS
 
 .button-container {
 	@include shift(1);
+	@include media($mobile) {
+		@include shift(2);
+	}
 	a {
 		@include span-columns(5.5);;
 		background-color: #f8e813;
@@ -17,6 +20,13 @@ BUTTONS
 		font-size: em(16);
 		letter-spacing: em(7);
 		padding: em(18) 0;
+		text-align: center;
 		text-transform: uppercase;
+		@include media($mobile) {
+			@include span-columns(10);
+			&:first-child {
+				margin-bottom: em(18);
+			}
+		}
 	}
 }

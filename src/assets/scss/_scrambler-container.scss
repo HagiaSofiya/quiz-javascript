@@ -1,0 +1,40 @@
+/*
+
+SCRAMBLER CONTAINER
+
+*/
+
+.scrambler-container {
+	@include outer-container();
+}
+
+.text-fields {
+	height: 100%;
+	display: block;
+}
+
+#textInput,
+#textDisplay {
+	@include span-columns(12);
+	background-color: #000;
+	border: none;
+	color: #fff;
+	font-family: 'Roboto Condensed',;
+	height: em(200);
+	resize:none;
+	word-wrap: break-word;
+}
+
+#textInput {
+ 	white-space: normal;
+}
+
+#textDisplay {
+	overflow-x: scroll;
+	span {
+		float: left;
+	}
+	br {
+		display:none
+	}
+}

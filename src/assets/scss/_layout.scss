@@ -10,9 +10,10 @@ LAYOUT
 	height: 100%; /* For at least Firefox */
 	min-height: 100%;
 }
+
 .site-wrapper-inner {
 	display: table-cell;
-	vertical-align: top;
+	vertical-align: middle;
 }
 .scrambler-container {
 	margin-right: auto;
@@ -20,11 +21,11 @@ LAYOUT
 }
 
 .inner {
-	padding: 30px;
+
 }
 
 .cover {
-	padding: 0 20px;
+
 }
 
 @media (min-width: 768px) {

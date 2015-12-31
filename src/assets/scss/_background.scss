@@ -9,3 +9,59 @@ BACKGROUND
 	background-repeat: no-repeat;
     background-size: cover;
 }
+.target {
+	background-image: url('../img/target.png');
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid {
+	background-image: url('../img/grid.png');
+	background-repeat: no-repeat;
+ 	background-position: center;
+    background-size: 100% 105%;
+}
+
+.scrambler-arrow-top-left {
+	background-image: url('../img/scrambler-arrow/top-left.png');
+	background-repeat: no-repeat;
+	height: em(91);
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: em(91);
+
+}
+
+.scrambler-arrow-top-right {
+	background-image: url('../img/scrambler-arrow/top-right.png');
+	background-repeat: no-repeat;
+	height: em(91);
+	right: 0;
+	position: absolute;
+	top: 0;
+	width: em(91);
+
+}
+
+.scrambler-arrow-bottom-left{
+	background-image: url('../img/scrambler-arrow/bottom-left.png');
+	background-repeat: no-repeat;
+	bottom: 0;
+	height: em(91);
+	left: 0;
+	position: absolute;
+	width: em(91);
+}
+
+.scrambler-arrow-bottom-right {
+	background-image: url('../img/scrambler-arrow/bottom-right.png');
+	background-repeat: no-repeat;
+	bottom: 0;
+	height: em(91);
+	position: absolute;
+	right: 0;
+	width: em(91);
+
+}

@@ -1,10 +1,26 @@
-<button id="scramble">Scramble</button>
-<button id="unscramble">Unscramble</button>
-<hr>
-<textarea id="textInput">
-	{{>initial-scramble}}
-</textarea>
-<hr>
-<div id="textDisplay">
-	{{>initial-scramble}}
+<div class="site-wrapper">
+
+	<div class="site-wrapper-inner">
+
+		<div class="scrambler-container">
+
+			<div class="inner cover">
+				 <textarea id="textInput">
+					{{>initial-scramble}}
+				</textarea>
+				<div id="textDisplay">
+					{{>initial-scramble}}
+				</div>
+
+				<div class="button-container">
+					<button id="scramble">Scramble</button>
+					<button id="unscramble">Unscramble</button>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
 </div>

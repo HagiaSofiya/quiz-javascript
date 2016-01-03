@@ -46,6 +46,5 @@ scrambler.unscrambleBtn.addEventListener('click', function(e) {
 });
 
 scrambler.clearBtn.addEventListener('click', function(e) {
-	console.log('sofiya');
     scrambler.textDisplayEl.innerHTML = scrambler.textInputEl.value = '';
 });

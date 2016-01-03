@@ -1,0 +1,32 @@
+/*
+
+MIXINS
+
+*/
+
+@mixin bg-img ($postion, $repeat, $size...) {
+	background-position: $postion;
+	background-repeat: $repeat;
+	background-size: $size;
+}
+
+
+@mixin arrows {
+	background-repeat: no-repeat;
+	position: absolute;
+	@include media($mobile) {
+		display: none;
+	}
+}
+
+@mixin arrow-position ($bottom: null, $left: null, $right: null, $top: null) {
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+  top: $top;
+}
+
+@mixin arrow-width-height ($wh) {
+	height: $wh;
+	width: $wh;
+}

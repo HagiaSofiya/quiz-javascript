@@ -20,8 +20,8 @@ SCRAMBLER CONTAINER
 #textDisplay {
 	background-color: rgba(0, 0, 0, .5);
 	border: none;
-	border-bottom: em(30) solid rgba(0, 0, 0, 0);
-	border-top: em(30) solid rgba(0, 0, 0, 0);
+	border-bottom: em(30) solid transparent;
+	border-top: em(30) solid transparent;
 	color: #fff;
 	font-family: 'Roboto Condensed',;
 	height: em(250);

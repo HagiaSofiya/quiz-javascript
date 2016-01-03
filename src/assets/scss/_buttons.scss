@@ -6,15 +6,17 @@ BUTTONS
 
 
 .button-container {
-	@include shift(1);
+	@include outer-container();
+	@include shift(0.75 of 12);
 	@include media($mobile) {
 		@include shift(0);
 	}
 	a {
-		@include span-columns(5.5);
+		@include span-columns(3.75);
 		background-color: #f8e813;
 		border: none;
 		color: #000;
+		cursor: pointer;
 		display: inline-block;
 		font-family: 'Oswald', sans-serif;
 		font-size: em(16);
@@ -23,8 +25,9 @@ BUTTONS
 		text-align: center;
 		text-transform: uppercase;
 		@include media($mobile) {
-			@include span-columns(6);
+			@include span-columns(4);
 			font-size: em(12);
+			letter-spacing: em(5);
 		}
 	}
 }

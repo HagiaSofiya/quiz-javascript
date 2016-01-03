@@ -7,6 +7,7 @@ var scrambler = {
     unscrambleBtn: document.querySelector('#unscramble'),
     textInputEl: document.querySelector('#textInput'),
     textDisplayEl: document.querySelector('#textDisplay'),
+    clearBtn: document.querySelector('#clearBtn'),
 
 	scramble: function(str) {
         var result = '';
@@ -42,4 +43,9 @@ scrambler.scrambleBtn.addEventListener('click', function(e) {
 scrambler.unscrambleBtn.addEventListener('click', function(e) {
     var unscrambledText = scrambler.unscramble(scrambler.textInputEl.value);
     scrambler.textDisplayEl.innerHTML = scrambler.textInputEl.value = unscrambledText;
+});
+
+scrambler.clearBtn.addEventListener('click', function(e) {
+	console.log('sofiya');
+    scrambler.textDisplayEl.innerHTML = scrambler.textInputEl.value = '';
 });

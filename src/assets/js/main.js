@@ -31,9 +31,21 @@ var scrambler = {
 	randomChar: function() {
 		var charCode = Math.floor(Math.random() * (this.MAX_CHARCODE - this.MIN_CHARCODE) + this.MIN_CHARCODE);
 		return String.fromCharCode(charCode);
-	}
+	},
 
+	buttonToggle: function() {
+		var textValue = textInput.value;
+		if (textValue.indexOf('span')!=-1) {
+			this.scrambleBtn.style.display = 'none';
+			this.unscrambleBtn.style.display = 'inline-block';
+		} else {
+			this.scrambleBtn.style.display = 'inline-block';
+			this.unscrambleBtn.style.display = 'none';
+		}
+	}
 };
+
+scrambler.buttonToggle();
 
 scrambler.scrambleBtn.addEventListener('click', function(e) {
     var scrambledText = scrambler.scramble(scrambler.textInputEl.value);
@@ -47,4 +59,8 @@ scrambler.unscrambleBtn.addEventListener('click', function(e) {
 
 scrambler.clearBtn.addEventListener('click', function(e) {
     scrambler.textDisplayEl.innerHTML = scrambler.textInputEl.value = '';
+});
+
+scrambler.textInputEl.addEventListener('keyup', function(e) {
+	scrambler.buttonToggle();
 });

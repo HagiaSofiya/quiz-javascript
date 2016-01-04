@@ -26,7 +26,7 @@
 * Open [http://localhost:9000](http://localhost:9000) in your browser
 
 
-Grunt task will compile assets in src folder into a build folder where http://localhost:9000](http://localhost:9000) is served from.
+Grunt task will compile assets in src folder into a build folder where [http://localhost:9000](http://localhost:9000) is served from.
 
 Build folder follow this structure:
 

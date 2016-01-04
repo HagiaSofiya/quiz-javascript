@@ -150,6 +150,16 @@ module.exports = function(grunt) {
             }
         },
 
+        cssmin: {
+            options: {
+                keepSpecialComments: 0
+            },
+            files: {
+                src: 'build/assets/css/main.css',
+                dest: 'build/assets/css/main.min.css'
+            }
+        },
+
         uglify: {
             mainjs: {
                 src: 'build/assets/js/main.js',
@@ -183,8 +193,8 @@ module.exports = function(grunt) {
         'jshint',
         'assemble',
         'compass:build',
-        'concat',
         'copy',
+        'cssmin',
         'uglify'
     ]);
 

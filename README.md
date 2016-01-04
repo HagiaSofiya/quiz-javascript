@@ -18,6 +18,8 @@
 
 1. Clone the repo: `git clone https://github.com/HagiaSofiya/quiz-javascript.git`
 * Change directory into repo: `cd quiz-javascript`
+* Fetch remote branches: `git fetch`
+* Checkout develop: `git git checkout develop`
 * Install node modules: `npm install`
 * Install Bower packages: `bower install`
 * Start local server: 'grunt'

@@ -22,7 +22,7 @@
 * Checkout develop: `git git checkout develop`
 * Install node modules: `npm install`
 * Install Bower packages: `bower install`
-* Start local server: 'grunt'
+* Start local server: `grunt`
 * Open [http://localhost:9000](http://localhost:9000) in your browser
 
 

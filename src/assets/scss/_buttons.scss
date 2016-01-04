@@ -7,25 +7,28 @@ BUTTONS
 
 .button-container {
 	@include outer-container();
-	@include shift(0.75 of 12);
+	@include shift(1);
 	@include media($mobile) {
 		@include shift(0);
 	}
 	a {
-		@include span-columns(3.75);
+		@include span-columns(5.5);
 		background-color: #f8e813;
 		border: none;
 		color: #000;
 		cursor: pointer;
-		display: inline-block;
+		display: none;
 		font-family: 'Oswald', sans-serif;
 		font-size: em(16);
 		letter-spacing: em(7);
 		padding: em(18) 0;
 		text-align: center;
 		text-transform: uppercase;
+		&.clearBtn {
+			display: inline-block;
+		}
 		@include media($mobile) {
-			@include span-columns(4);
+			@include span-columns(6);
 			font-size: em(12);
 			letter-spacing: em(5);
 		}

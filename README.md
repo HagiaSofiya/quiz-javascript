@@ -48,6 +48,10 @@ Live site is hosted on gh-pages
 
 ### [Scrambler](http://hagiasofiya.github.io/quiz-javascript/)
 
+Code for gh-pages is in seperate branch with the build files at the root.
+
+[gh-pages branch](https://github.com/HagiaSofiya/quiz-javascript/tree/gh-pages)
+
 
 
 ## JavaScript Quiz Question ##

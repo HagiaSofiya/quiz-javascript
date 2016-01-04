@@ -1,6 +1,5 @@
 var scrambler = {
 
-
 	///
 	/// PROPERTY AND VALUE CREATION
 	///
